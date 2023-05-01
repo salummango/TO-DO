@@ -1,0 +1,122 @@
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                
+                body {
+                    font-family: 'Lato', sans-serif;
+                    background-image: linear-gradient(to right, #5C258D, #4389A2);
+                    width: 100%;
+                    min-height: 100vh;
+                }
+                
+                .main-container {
+                    width: 80%;
+                    min-width: 90%;
+                    background-color: #fff;
+                    margin: 100px auto 50px;
+                    padding: 20px;
+                    border-radius: 24px;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+                }
+                
+                .main-container h1 {
+                    color: #5C258D;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                
+                #input-field {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 0;
+                }
+                
+                #input-box {
+                    text-align: center;
+                    font-size: large;
+                    font-family: inherit;
+                    flex: 0.7;
+                    margin: 1.5em auto;
+                    padding: .4em 1em;
+                    border: none;
+                    border-radius: 18px;
+                    outline: none;
+                    height: 50px;
+                    background-color: #f2f2f2;
+                }
+                
+                #add-btn {
+                    cursor: pointer;
+                    font-size: large;
+                    padding: 1em 1em;
+                    background-color: #5C258D;
+                    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+                    border: none;
+                    border-radius: 18px;
+                    width: 100px;
+                    margin-left: 10px;
+                    color: #fff;
+                    transition: background-color 0.3s ease-in-out;
+                }
+                
+                #add-btn:hover {
+                    background-color: #4389A2;
+                }
+                
+                #list-container ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    padding: 0;
+                }
+                
+                #list-container li {
+                    user-select: none;
+                    font-size: 16px;
+                    width: 300px;
+                    height: 60px;
+                    margin: 10px;
+                    border-radius: 9px;
+                    background-color: #fff;
+                    position: relative;
+                    list-style: none;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+                }
+                
+                #list-container li.checked {
+                    color: #555;
+                    text-decoration: line-through;
+                    background-color: rgba(155, 137, 155, 0.267);
+                }
+                
+                #list-container li button {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 15px;
+                    color: #fff;
+                    text-align: center;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: #5C258D;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease-in-out;
+                }
+                
+                #list-container li button:hover {
+                    background-color: #4389A2;
+                }
+                
+                #reset-button {
+                    margin: 30px auto;
+                    color: #5C258D;
+                    cursor: pointer;
+                    font-size: 20px;
+                }
